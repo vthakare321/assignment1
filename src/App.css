@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+.btn{
+  background-color: #6996f8;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -28,6 +32,34 @@
   color: #61dafb;
 }
 
+.icon-circle {
+  width: 36px;
+  height: 36px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-dark {
+  background-color: #0b1622;
+}
+
+.hero-section {
+  background-color: #2563eb;
+  min-height: 90vh;
+  padding: 60px 0;
+}
+
+
+
+.testimonial-card {
+  background-color: #f9fafb; 
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +67,208 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* proud section */
+.proud-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9; 
+}
+
+.proud-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.proud-section p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-container img {
+  width: 100px; 
+  height: auto; 
+  max-width: 100%; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .proud-section h2 {
+    font-size: 2rem;
+  }
+  
+  .proud-section p {
+    font-size: 0.9rem;
+  }
+
+  .logo-container img {
+    width: 80px; 
+  }
+}
+
+.mailcontainer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} 
+
+.heading {
+  font-size: 16px;
+  color: #007bff;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.email-input {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 4px 0 0 4px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.support-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.info-item {
+  margin: 0 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .email-input {
+    width: 70%;
+  }
+}
+
+/* Footer */
+.footer {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.footer-section {
+    margin-right: 40px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin: 5px 0;
+}
+
+.footer-notifications {
+    margin: 20px 0;
+}
+
+.email-input {
+    display: flex;
+    align-items: center;
+}
+
+.email-input input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.email-input button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons span {
+    margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
 }
