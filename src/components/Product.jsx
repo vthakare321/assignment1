@@ -44,7 +44,7 @@ export default function ProductFeatures() {
             </div>
           ))}
         </div>
-        <div className="col-md-6 d-flex justify-content-center">
+        <div className="container col-md-6 col-sm-1 d-flex justify-content-center">
           <img src={chair}/>
         </div>
       </div>
